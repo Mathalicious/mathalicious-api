@@ -18,7 +18,7 @@ curl "http://mathalicious.com/api/v1/users"
     "user": {
       "id": "109",
       "email": "user@example.com",
-      "api_token": "zxywvutsrq987654321"
+      "api_token": "P5oPo1wMBRJYH-uEsBwS"
     }
   }
 ```
