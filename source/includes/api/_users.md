@@ -34,6 +34,8 @@ Parameter | Description | Required
 user[email] | User's email address | true
 user[first_name] | User's first name | true
 user[last_name] | User's last name | true
+user[external_id] | User's external id, string | true
+user[fake_email] | Boolean defining if user's email is fake |
 user[zip_code] | User's zip code |
 user[school_name] | User's school |
 user[school_district] | User's school district |
@@ -45,6 +47,12 @@ user[school_district] | User's school district |
 
 ```curl
 curl "http://mathalicious.com/api/v1/users?email=user@example.com"
+  -X GET
+  -H "Authorization: abcdefghijklmnop123456789"
+```
+
+```curl
+curl "http://mathalicious.com/api/v1/users?external_id=12345"
   -X GET
   -H "Authorization: abcdefghijklmnop123456789"
 ```
@@ -69,4 +77,5 @@ curl "http://mathalicious.com/api/v1/users?email=user@example.com"
 
 Parameter | Description | Required
 --------- | ----------- | --------
-email | User's email address | true
+email | User's email address 
+external_id | User's external_id
