@@ -22,11 +22,11 @@
     <a href="#" id="nav-button">
       <span>
         NAV
-        <img src="images/navbar.png" />
+        <img src="images/navbar.png" alt="Navbar" />
       </span>
     </a>
     <div class="tocify-wrapper">
-      <img src="images/mathalicious.png" />
+      <img src="images/mathalicious.png" alt="Mathalicious" />
         <div class="lang-selector">
               <a href="#" data-language-name="curl">curl</a>
         </div>
@@ -102,6 +102,16 @@
 <td>true</td>
 </tr>
 <tr>
+<td>user[external_id]</td>
+<td>User&rsquo;s external id, string</td>
+<td>true</td>
+</tr>
+<tr>
+<td>user[fake_email]</td>
+<td>Boolean defining if user&rsquo;s email is fake</td>
+<td></td>
+</tr>
+<tr>
 <td>user[zip_code]</td>
 <td>User&rsquo;s zip code</td>
 <td></td>
@@ -124,6 +134,10 @@
 <p>To see if a user exists in the system, make a GET request to this endpoint.</p>
 </blockquote>
 <pre class="highlight plaintext"><code>curl "http://mathalicious.com/api/v1/users?email=user@example.com"
+  -X GET
+  -H "Authorization: abcdefghijklmnop123456789"
+</code></pre>
+<pre class="highlight plaintext"><code>curl "http://mathalicious.com/api/v1/users?external_id=12345"
   -X GET
   -H "Authorization: abcdefghijklmnop123456789"
 </code></pre>
@@ -156,7 +170,12 @@
 <tr>
 <td>email</td>
 <td>User&rsquo;s email address</td>
-<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>external_id</td>
+<td>User&rsquo;s external_id</td>
+<td></td>
 </tr>
 </tbody></table>
 
