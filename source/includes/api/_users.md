@@ -5,7 +5,7 @@
 > To create a new user, make a POST request with the following params:
 
 ```curl
-curl "http://mathalicious.com/api/v1/users"
+curl "http://citizenmath.com/api/v1/users"
   -X POST
   -d "user[email]=user@example.com&user[first_name]=Jane&user[last_name]=Doe"
   -H "Authorization: abcdefghijklmnop123456789"
@@ -18,14 +18,14 @@ curl "http://mathalicious.com/api/v1/users"
     "user": {
       "id": "109",
       "email": "user@example.com",
-      "api_token": "P5oPo1wMBRJYH-uEsBwS"
+      "access_token": "P5oPo1wMBRJYH-uEsBwS"
     }
   }
 ```
 
 ### HTTP Request:
 
-`POST https://mathalicious.com/api/v1/users`
+`POST https://citizenmath.com/api/v1/users`
 
 ### Request Parameters:
 
@@ -46,18 +46,18 @@ user[school_district] | User's school district |
 > To see if a user exists in the system, make a GET request to this endpoint.
 
 ```curl
-curl "http://mathalicious.com/api/v1/users?email=user@example.com"
+curl "http://citizenmath.com/api/v1/users?email=user@example.com"
   -X GET
   -H "Authorization: abcdefghijklmnop123456789"
 ```
 
 ```curl
-curl "http://mathalicious.com/api/v1/users?external_id=12345"
+curl "http://citizenmath.com/api/v1/users?external_id=12345"
   -X GET
   -H "Authorization: abcdefghijklmnop123456789"
 ```
 
-> If the user exists, we return the id and user_api_token
+> If the user exists, we return the id and access_token
 
 ```json
   {
@@ -71,7 +71,7 @@ curl "http://mathalicious.com/api/v1/users?external_id=12345"
 
 ### HTTP Request:
 
-`GET https://mathalicious.com/api/v1/users?email=user@example.com`
+`GET https://citizenmath.com/api/v1/users?email=user@example.com`
 
 ### Request Parameters:
 
