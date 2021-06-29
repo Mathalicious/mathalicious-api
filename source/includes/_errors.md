@@ -1,6 +1,6 @@
 # Errors
 
-The Mathalicious API uses the following error codes:
+The Citizen Math API uses the following error codes:
 
 Error Code | Meaning
 ---------- | -------

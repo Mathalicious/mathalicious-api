@@ -18,4 +18,4 @@ search: true
 
 # Introduction
 
-Mathalicious uses API keys to allow access to the API. To obtain an API key, please contact us at holler@citizenmath.com
+Citizen Math uses API keys to allow access to the API. To obtain an API key, please contact us at holler@citizenmath.com

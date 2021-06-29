@@ -11,7 +11,7 @@ curl "http://citizenmath.com/api/v1/users"
   -H "Authorization: abcdefghijklmnop123456789"
 ```
 
-> The response will include the user's ID in the Mathalicious database and their API token:
+> The response will include the user's ID in the Citizen Math database and their API token:
 
 ```json
   {
